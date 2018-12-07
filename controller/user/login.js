@@ -6,7 +6,7 @@ const formidable = require('formidable');
 
 class LoginHandle {
 	constructor(){
-		// this.encryption = this.encryption.bind(this)
+		this.encryption = 1;
     }
     /**
      * 登录
@@ -44,7 +44,7 @@ class LoginHandle {
             }
 
             try{
-
+                
                 res.send({
                     code:200,
                     msg:'登录成功'
@@ -93,12 +93,12 @@ class LoginHandle {
             }
 
             try{
+                
                 res.send({
                     code:200,
                     msg:'注册成功'
                 })
             }catch(err){
-                encryption('asds')
 
                 res.send({
                     name:'ERROR_DATA',
@@ -108,9 +108,8 @@ class LoginHandle {
             
         })
     }
-                
-    encryption(name){
-        console.log(name)
+    static aaa(){
+        console.log('aa')
     }
 }
 module.exports  =  new LoginHandle();

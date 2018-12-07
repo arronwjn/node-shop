@@ -2297,7 +2297,7 @@ var HTML_ENTITY = {};
 示例：
 
 ```js
-export default stringFormat(myName)=>{
+export default getFormat(myName)=>{
   
 }
 ```
@@ -2311,7 +2311,7 @@ export default stringFormat(myName)=>{
 示例：
 
 ```js
-function stringFormat(source) {
+function getFormat(source) {
 }
 ```
 
@@ -2512,7 +2512,7 @@ $api.addClient = function(formData) {
 
 ### 6.3 vue方法放置顺序
 
-[解释]vue项目中有统一及合理的方法顺序有助于对于项目代码更好的阅读
+[解释]vue项目中有统一及合理的方法顺序有助于对项目代码更好的阅读
 
 ```js
 1.mixins
